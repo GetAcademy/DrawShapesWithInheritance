@@ -23,7 +23,8 @@ namespace DrawShapesWithInheritance
             {
                 Console.CursorTop = startRowIndex + rowIndex;
                 Console.CursorLeft = startColIndex;
-                Console.Write(string.Empty.PadRight(width, Symbol));
+                var line = string.Empty.PadRight(width, Symbol);
+                Console.Write(line);
                 width += grow;
             }
         }
